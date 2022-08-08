@@ -3,7 +3,7 @@
     display: inline-block;
     background-color: rgb(220, 109, 109);
     margin: 10px;
-    height: 360px;
+    height: 300px;
     text-align: left;
     vertical-align: middle;
     padding: 15px;
@@ -22,8 +22,8 @@
     display: inline-block;
     background-color: rgb(220, 109, 109);
     margin: 10px;
-    height: 360px;
-    width: 360px;
+    height: 300px;
+    width: 300px;
     text-align: left;
     vertical-align: middle;
     padding: 15px;
