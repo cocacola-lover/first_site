@@ -31,33 +31,29 @@
     border: 3px solid rgb(135, 24, 24);
 }
 
-h2 {
-    margin: 10px;
-}
-
 .profilePicture {
     width: auto;
-    padding: 5px;
+    padding: 0px;
 }
 
 h1 {
     font-size: 35px;
+    text-decoration: underline;
+    margin: 10px;
 }
 
 h2{
     font-size: 30px;
+    margin: 10px;
 }
 
 h3 {
     font-size: 25px;
+    margin: 10px;
 }
 
 p, li {
     font-size: 20px;
-}
-
-h1{
-    text-decoration: underline;
 }
 
 ul {
