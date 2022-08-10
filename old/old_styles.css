@@ -1,0 +1,29 @@
+h1 {
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: crimson;
+}
+p {
+    color: green;
+}
+.important {
+    background-color: crimson;
+}
+.bigimage{
+    width: auto;
+    height: 1000px;
+}
+.blocktest{
+    display: block;
+}
+
+.blocktest.small{
+    background-color: black;
+    width: 30px;
+    height: 20px;
+    color: white
+}
+
+.inlinetest{
+    display: inline;
+}
