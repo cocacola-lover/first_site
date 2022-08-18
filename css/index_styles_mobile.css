@@ -1,4 +1,4 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
     /* Remove margin */
     .header,
     .first-panel,
@@ -17,7 +17,6 @@
 
     .banner {
         min-height: 550px;
-        background-image: none;
     }
 
     /* Less font */
@@ -26,3 +25,8 @@
     }
     
 }
+@media screen and (max-width: 992px) {
+    .banner {
+        background-image: none;
+    }
+ }
