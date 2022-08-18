@@ -86,7 +86,7 @@ h1,
 .picture-panel {
     display: flex;
     margin: 0px 200px;
-    justify-content: center;
+    justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -94,6 +94,7 @@ h1,
 .info{
     max-width: 300px;
     text-align: center;
+    flex: 1;
 }
 
 .info-text {
