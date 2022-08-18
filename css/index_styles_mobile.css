@@ -1,0 +1,27 @@
+@media screen and (max-width: 992px) {
+    /* Remove margin */
+    .header,
+    .first-panel,
+    .picture-panel,
+    .quote {
+        margin: 0px 10px;
+    }
+    .fourth-panel h2,
+    .fourth-panel ul {
+        margin: 30px 10px;
+    }
+
+    .second-panel h2{
+        margin: 50px 0px;
+    }
+
+    .banner {
+        min-height: 550px;
+    }
+
+    /* Less font */
+    h1 {
+        font-size: 50px;
+    }
+    
+}

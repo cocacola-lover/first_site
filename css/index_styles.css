@@ -38,7 +38,7 @@ body {
 /* First panel*/
 
 .banner {
-    background-image: url("images/banner.jpg");
+    background-image: url("../images/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 750px;
