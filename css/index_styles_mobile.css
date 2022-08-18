@@ -17,6 +17,7 @@
 
     .banner {
         min-height: 550px;
+        background-image: none;
     }
 
     /* Less font */
