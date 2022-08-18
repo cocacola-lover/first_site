@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 100px 100px;
+    margin: 0px;
+}
+
+.field {
+    display: flex;
+    aspect-ratio: 1;
+}
+
+.row {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tile {
+    background-color: white;
+    border: 0.1px solid black;
+    flex: 1 1 auto;
+    min-height: 1px;
+    aspect-ratio: 1;
+}
+
+.changing_field_size{
+    color: rgb(145, 49, 76);
+    font-weight: 500;
+}
