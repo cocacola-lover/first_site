@@ -9,32 +9,6 @@ body {
     flex-direction: column;
 }
 
-/* Header */
-
-.header {
-    margin: 0px 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex:none;
-}
-
-.logo{
-    color: rgb(232, 0, 66);
-    font-size: 30px;
-    font-weight: 900;
-}
-.links-left {
-    display: flex;
-    justify-content: flex-end;
-    gap: 16px;
-}
-.links-left a{
-    text-decoration: none;
-    color: rgb(145, 49, 76);
-    font-size: 20px;
-}
-
 /* First panel*/
 
 .banner {
@@ -162,19 +136,6 @@ h1,
 .fourth-panel a{
     text-decoration: none;
     color:rgb(232, 0, 66)
-}
-
-/* Footer */
-.footer{
-    background-color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer a{
-    padding-left: 7px;
 }
 
 /*other*/

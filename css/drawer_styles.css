@@ -1,11 +1,18 @@
 body{
     height: 100vh;
-    display: flex;
-    justify-content: space-between;
     flex: 0 0 auto;
     box-sizing: border-box;
-    padding: 100px 100px;
+    /*padding: 100px 100px;*/
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    margin: 20px 100px;
 }
 
 .field {
@@ -30,4 +37,9 @@ body{
 .changing_field_size{
     color: rgb(145, 49, 76);
     font-weight: 500;
+}
+
+.header,
+.footer {
+    margin: 0px 100px;
 }
