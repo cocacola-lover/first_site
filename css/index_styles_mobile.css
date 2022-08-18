@@ -5,6 +5,7 @@
     .picture-panel,
     .quote {
         margin: 0px 10px;
+        max-width: 90vw;
     }
     .fourth-panel h2,
     .fourth-panel ul {
@@ -18,6 +19,12 @@
     .banner {
         min-height: 550px;
     }
+
+    .first-panel h1,
+    .first-panel p {
+        flex: 0 1 auto;
+    }
+    
 
     /* Less font */
     h1 {
