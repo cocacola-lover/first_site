@@ -1,13 +1,20 @@
 const btn = document.querySelector('.click');
-btn.style.minWidth = `0px`;
+btn.style.minWidth = `0vw`;
 
-const startingSize = 100;
-const expandBy = 100;
+const startingSize = 7;
+const expandBy = 5;
 let size = startingSize;
 let margin = 0;
 let expand = true;
 
 btn.addEventListener("click", () => {
+
+    if (btn.style.marginLeft > "80vw") {
+        margin = -10 - size + startingSize/2;
+        btn.style.marginLeft = `${margin}vw`;
+        return;
+    }
+
     if (expand === true) {
         if (size == startingSize + expandBy * 4) {
             expand = false;
@@ -26,6 +33,6 @@ btn.addEventListener("click", () => {
             size -= expandBy;
         }
     }
-    btn.style.minWidth = `${size}px`;
-    btn.style.marginLeft = `${margin}px`;
+    btn.style.minWidth = `${size}vw`;
+    btn.style.marginLeft = `${margin}vw`;
 });

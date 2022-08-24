@@ -4,6 +4,8 @@
     --normal-font-size: min(2rem, 3.5vh);
     --bigger-font-size: 2.2rem;
     --big-font-size: 5rem;
+
+    --page-margin: 0vw 10vw;
 }
 
 *{
@@ -30,8 +32,11 @@ body {
 }
 
 .first-panel{
-    margin: 0px 200px;
+    margin: var(--page-margin);
     width: 700px;
+}
+
+.first-panel span {
     background-color: white;
 }
 
@@ -45,6 +50,8 @@ body {
     color: white;
     font-size: var(--normal-font-size);
     font-weight: 700;
+    min-width: 7vw;
+    cursor: pointer;
 }
 
 h1,
@@ -62,12 +69,12 @@ h1,
 .second-panel h2{
     text-align: center;
     color: white;
-    margin: 50px 200px;
+    margin: 50px 10vw;
 }
 
 .picture-panel {
     display: flex;
-    margin: 0px 200px;
+    margin: var(--page-margin);
     justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
@@ -108,7 +115,7 @@ h1,
 .quote{
     font-style: italic;
     font-weight: lighter;
-    margin: 0px 200px;
+    margin: var(--page-margin);
     font-size: var(--normal-font-size);
     max-width: 600px;
     text-align: center;
@@ -127,12 +134,12 @@ h1,
 }
 
 .fourth-panel h2{
-    margin: 30px 200px;
+    margin: 30px 10vw;
     color:white;
 }
 
 .fourth-panel ul {
-    margin: 30px 200px;
+    margin: 30px 10vw;
 }
 
 .fourth-panel li{
