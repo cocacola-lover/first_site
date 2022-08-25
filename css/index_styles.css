@@ -50,6 +50,7 @@ body {
     font-weight: 700;
     min-width: 7vw;
     cursor: pointer;
+    position: absolute;
 }
 
 h1,
