@@ -1,7 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     height: 100vh;
     flex: 0 0 auto;
-    box-sizing: border-box;
     /*padding: 100px 100px;*/
     margin: 0px;
     display: flex;
