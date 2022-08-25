@@ -5,7 +5,6 @@
     .picture-panel,
     .quote {
         max-width: 90vw;
-        width: auto;
     }
 
     .banner {
@@ -25,6 +24,13 @@
     
 }
 @media screen and (max-width: 992px) {
+    .header,
+    .first-panel,
+    .picture-panel,
+    .quote {
+        width: auto;
+    }
+
     .banner {
         background-image: none;
     }
