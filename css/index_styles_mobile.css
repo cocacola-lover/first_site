@@ -5,6 +5,7 @@
     .picture-panel,
     .quote {
         max-width: 90vw;
+        width: auto;
     }
 
     .banner {

@@ -1,3 +1,5 @@
+@import "font_size.css";
+
 /* Header */
 
 .header {
@@ -6,12 +8,12 @@
     justify-content: space-between;
     align-items: center;
     flex:none;
-    font-size: 1.5rem;
+    font-size: var(--small-font-size);
 }
 
 .logo{
     color: rgb(232, 0, 66);
-    font-size: 2rem;
+    font-size: var(--normal-font-size);
     font-weight: 900;
 }
 .links-left {
@@ -22,7 +24,7 @@
 .links-left a{
     text-decoration: none;
     color: rgb(145, 49, 76);
-    font-size: 1.5rem;
+    font-size: var(--small-font-size);
 }
 
 /* Footer */
@@ -32,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: var(--small-font-size);
 }
 
 .footer a{
