@@ -26,12 +26,14 @@ body {
     display: flex;
     align-items: center;
     flex: none;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 .first-panel{
     margin: var(--page-margin);
     width: 700px;
-    overflow-x: visible;
 }
 
 .first-panel span {
