@@ -7,10 +7,6 @@
         max-width: 90vw;
     }
 
-    .banner {
-        min-height: 550px;
-    }
-
     .first-panel h1,
     .first-panel p {
         flex: 0 1 auto;
@@ -28,5 +24,6 @@
 
     .banner {
         background-image: none;
+        min-height: 550px;
     }
  }
