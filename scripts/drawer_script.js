@@ -10,39 +10,13 @@ function getRandomColor(){
     color[2] = getRandom(255);
 }
 
-function createButton() {
-    const btn = document.querySelector(".changing_field_size");
-
-    btn.addEventListener("mouseenter", () => {
-        btn.style.fontWeight = "900";
-        btn.style.color = "rgb(232, 0, 66)";
-    });
-
-    btn.addEventListener("mouseleave", () => {
-        btn.style.fontWeight = "500";
-        btn.style.color = "rgb(145, 49, 76);";
-    });
-
-    btn.addEventListener("click", () => {
-        str = prompt("Какой размер пожелаете?");
-
-        if (isNaN(str)) {
-            btn.textContent = "Нужно ввести число!";
-            return;
-        }
-        if (Number(str) > 100) {
-            btn.textContent = "Число должно быть меньше 100!";
-            return;
-        }
-        if (Number(str) < 1) {
-            btn.textContent = "Число должно быть больше 1!";
-            return;
-        }
-        size = Math.floor(Number(str));
+function createSlider() {
+    let slider = document.querySelector(".slider");
+    slider.addEventListener("input", function() {
+        size = Math.floor(this.value);
         removeField();
         createField();
-    })
-
+    });
 }
 
 function removeField() {
@@ -70,4 +44,5 @@ function createField() {
     }
 
 createField();
-createButton();
+//createButton();
+createSlider();

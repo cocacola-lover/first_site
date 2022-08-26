@@ -1,48 +1,45 @@
-* {
-    box-sizing: border-box;
-}
+@import "normalize.css";
 
 body{
     height: 100vh;
-    flex: 0 0 auto;
-    /*padding: 100px 100px;*/
-    margin: 0px;
     display: flex;
     flex-direction: column;
-}
-
-.main{
-    display: flex;
     justify-content: space-between;
-    flex: 1;
-    margin: 20px 100px;
 }
 
-.field {
+.main {
     display: flex;
-    aspect-ratio: 1;
+    justify-content: space-around;
 }
 
-.row {
-    flex: 1 1 auto;
+.field{
+    text-align: center;
     display: flex;
     flex-direction: column;
+    aspect-ratio: 1 / 1;
+    height: min(50vw, 50vh);
+    flex: 0 1 auto;
+    border: 1px solid black;
 }
 
-.tile {
-    background-color: white;
-    border: 0.1px solid black;
-    flex: 1 1 auto;
+.row{
+    display: flex;
+    align-items: center;
+    flex:1;
+}
+
+.tile{
     min-height: 1px;
+    aspect-ratio: 1 / 1;
+    /*border: 0.1px solid black;*/
+    flex: 1 1 auto;
+}
+
+.settings{
+    height: 200px;
     aspect-ratio: 1;
 }
-
-.changing_field_size{
-    color: rgb(145, 49, 76);
-    font-weight: 500;
-}
-
-.header,
-.footer {
-    margin: 0px 100px;
+.slidecontainer{
+    height: 100px;
+    aspect-ratio: 1;
 }
