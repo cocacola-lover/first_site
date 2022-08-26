@@ -40,6 +40,7 @@ body {
 
 .click{
     display: block;
+    box-sizing: border-box;
     margin: 10px 0px;
     background-color: rgb(232, 0, 66);
     border-radius: 8px;
@@ -48,7 +49,7 @@ body {
     color: white;
     font-size: var(--normal-font-size);
     font-weight: 700;
-    min-width: 7vw;
+    width: max(10vw, 12vh);
     cursor: pointer;
     position: absolute;
 }
