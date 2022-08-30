@@ -1,5 +1,6 @@
 let size = 16;
 const color = [0, 0, 0];
+let hasBorder = false;
 
 function getRandom(top) {
     return Math.floor(Math.random() * top);
@@ -12,10 +13,22 @@ function getRandomColor(){
 
 function createSlider() {
     let slider = document.querySelector(".slider");
+    let field_size = document.querySelector("#field-size");
     slider.addEventListener("input", function() {
         size = Math.floor(this.value);
+        field_size.textContent = size;
         removeField();
         createField();
+    });
+    slider.addEventListener("mouseenter", () => {
+        const field = Array.from(document.getElementsByClassName("tile"));
+        field.forEach((element) => {element.classList.toggle("tile-border")})
+        hasBorder = true;
+    });
+    slider.addEventListener("mouseleave", () => {
+        const field = Array.from(document.getElementsByClassName("tile"));
+        field.forEach((element) => {element.classList.toggle("tile-border")})
+        hasBorder = false;
     });
 }
 
@@ -34,6 +47,7 @@ function createField() {
         for (let j = 0; j < size; j++) {
             let tile = document.createElement("div");
             tile.classList.toggle("tile");
+            !hasBorder || tile.classList.toggle("tile-border");
             tile.addEventListener("mouseover", () => {
                 tile.style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
             })
@@ -43,6 +57,7 @@ function createField() {
         }
     }
 
+getRandomColor();
 createField();
 //createButton();
 createSlider();
